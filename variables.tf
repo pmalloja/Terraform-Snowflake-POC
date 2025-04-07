@@ -1,2 +1,0 @@
-variable "SNOWFLAKE_USER" {
-}
