@@ -16,6 +16,11 @@ terraform {
 }
 
 provider "snowflake" {
+  account    = var.SNOWFLAKE_ACCOUNT
+  username   = var.SNOWFLAKE_USER
+  role       = var.SNOWFLAKE_ROLE
+  region     = var.SNOWFLAKE_REGION
+  private_key = var.SNOWFLAKE_PRIVATE_KEY
 }
 
 resource "snowflake_database" "demo_db" {
