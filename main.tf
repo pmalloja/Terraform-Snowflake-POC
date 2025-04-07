@@ -1,11 +1,10 @@
- terraform {
+terraform {
   required_providers {
     snowflake = {
       source  = "Snowflake-Labs/snowflake"
-      version = ">= 1.0.0"
+      version = "0.67.0"
     }
   }
-}
 
   backend "remote" {
     organization = "Snowflake-Terraform2025"
@@ -15,7 +14,7 @@
     }
   }
 
-
+}
 provider "snowflake" {
 }
 
