@@ -6,6 +6,7 @@ terraform {
     }
   }
 
+
   backend "remote" {
     organization = "Snowflake-Terraform2025"
 
@@ -16,6 +17,11 @@ terraform {
 }
 
 provider "snowflake" {
+  account     = var.SNOWFLAKE_ACCOUNT
+  user        = var.SNOWFLAKE_USER
+  role        = var.SNOWFLAKE_ROLE
+  private_key = var.SNOWFLAKE_PRIVATE_KEY
+  region      = var.SNOWFLAKE_REGION
 }
 
 resource "snowflake_database" "demo_db" {
