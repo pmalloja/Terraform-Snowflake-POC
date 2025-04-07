@@ -10,7 +10,7 @@ terraform {
     organization = "Snowflake-Terraform2025"
 
     workspaces {
-      name = "TF-Snowflake-Dev"
+      name = "TF-Snowflake-Dev1"
     }
   }
 
@@ -18,7 +18,7 @@ terraform {
 provider "snowflake" {
 }
 
-resource "snowflake_database" "demo_db" {
-  name    = "DEMO_DB"
+resource "snowflake_database" "demo_db1" {
+  name    = "DEMO_DB1"
   comment = "Database for Snowflake Terraform demo"
 }
