@@ -18,16 +18,16 @@ terraform {
 provider "snowflake" {
 }
 
-resource "snowflake_database" "demo_db1" {
+resource "snowflake_database" "demo_db2" {
   name    = "DEMO_DB1"
   comment = "Database for Snowflake Terraform demo"
 }
 
 
-module "MARKETING_SMALL_WH" {
+module "MARKETING_XSMALL_WH" {
   source         = "./warehouse"
   warehouse_name = "MARKETING_SMALL_WH"
-  warehouse_size = "SMALL"
+  warehouse_size = "XSMALL"
 }
 
 module "ALL_USERS" {
