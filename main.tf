@@ -24,7 +24,7 @@ resource "snowflake_database" "demo_db1" {
 }
 
 module "MARKETING_SMALL_WH" {
-    source = "./warehouse"
-    warehouse_name = "MARKETING_SMALL_WH"
-    warehouse_size = "SMALL"
+  source         = "./warehouse"
+  warehouse_name = "MARKETING_SMALL_WH"
+  warehouse_size = "SMALL"
 }
