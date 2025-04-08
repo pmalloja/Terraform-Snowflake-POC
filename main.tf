@@ -23,6 +23,7 @@ resource "snowflake_database" "demo_db1" {
   comment = "Database for Snowflake Terraform demo"
 }
 
+
 module "MARKETING_SMALL_WH" {
   source         = "./warehouse"
   warehouse_name = "MARKETING_SMALL_WH"
