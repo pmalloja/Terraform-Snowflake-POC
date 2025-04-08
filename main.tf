@@ -10,7 +10,7 @@ terraform {
     organization = "Snowflake-Terraform2025"
 
     workspaces {
-      name = "TF-Snowflake-Dev1"
+      name = "TF-Snowflake-Dev3"
     }
   }
 
