@@ -32,7 +32,7 @@ jobs:
 
       - name: Terraform Refresh
         id: refresh
-        run: terraform refresh
+        run: terraform apply -refresh-only -auto-approve
 
       - name: Terraform Apply
         id: apply
