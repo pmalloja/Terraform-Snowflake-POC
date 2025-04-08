@@ -12,3 +12,4 @@ resource "snowflake_warehouse" "WAREHOUSE" {
   warehouse_size = var.warehouse_size
   auto_suspend   = var.auto_suspend
 }
+

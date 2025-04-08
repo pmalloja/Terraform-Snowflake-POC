@@ -28,3 +28,13 @@ module "MARKETING_SMALL_WH" {
   warehouse_name = "MARKETING_SMALL_WH"
   warehouse_size = "SMALL"
 }
+
+module "ALL_USERS" {
+  source = "./users"
+  user_map = {
+    login_name : {}
+    TEST_USER1 : { "name" = "TEST_USER1", first_name = "test", "last_name" = "user1", "email" = "user@snowflake.example", "default_warehouse" = "COMPUTE_WH", "default_role" = "PUBLIC" }
+    TEST_USER2 : { "name" = "TEST_USER2", first_name = "test2", "last_name" = "user2", "email" = "user2@snowflake.example", "default_warehouse" = "COMPUTE_WH", "default_role" = "PUBLIC" }
+    TEST_USER2 : { "name" = "TEST_USER3", first_name = "test3", "last_name" = "user3", "email" = "user3@snowflake.example" }
+  }
+}
