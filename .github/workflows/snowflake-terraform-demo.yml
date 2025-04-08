@@ -30,6 +30,10 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
+      - name: Terraform Refresh
+        id: refresh
+        run: terraform refresh
+
       - name: Terraform Apply
         id: apply
         run: terraform apply -auto-approve
