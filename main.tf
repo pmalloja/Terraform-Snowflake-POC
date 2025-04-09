@@ -30,6 +30,13 @@ module "MARKETING_XSMALL_WH" {
   warehouse_size = "XSMALL"
 }
 
+
+module "SALES_XSMALL_WH" {
+  source         = "./warehouse"
+  warehouse_name = "SALES_XSMALL_WH"
+  warehouse_size = "XSMALL"
+}
+
 module "ALL_USERS" {
   source = "./users"
   user_map = {
